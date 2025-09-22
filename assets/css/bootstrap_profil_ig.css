@@ -1,0 +1,104 @@
+/*
+ * File: custom.css
+ * Deskripsi: Styling kustom untuk halaman profil Instagram.
+ */
+
+/* ============ GENERAL STYLING ============ */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.profile-container {
+background-color: #000;
+}
+
+
+/* Mengubah tampilan navbar */
+.navbar {
+    background-color: #000 !important;
+}
+
+.navbar-brand, .nav-link, .nav-link.active {
+    font-weight: 600;
+    color: #fff !important;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #363636;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link.active {
+    color: #fff !important;
+    border-bottom: 2px solid #fff;
+    background-color: transparent !important;
+    border-color: #fff !important;
+}
+
+/* ============ HEADER ============ */
+.profile-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+@media (min-width: 576px) {
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.username {
+    font-size: 1.5rem;
+    font-weight: 300;
+}   
+
+
+.bio strong {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* ============ SOROTAN (HIGHLIGHTS) ============ */
+.highlight-circle {
+    width: 60px;
+    height: 60px;
+    border-color: #444 !important;
+    background-color: #262626;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.highlights small {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ============ FEED ============ */
+.feed-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.card {
+    background-color: #000 !important;
+}
